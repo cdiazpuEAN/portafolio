@@ -44,7 +44,6 @@ h1 {
     font-size: 2.5rem;
     color: #1d3557;
     font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
 }
@@ -73,8 +72,7 @@ p {
 
 /* Seccion Principal */
 .principal {
-    background-attachment: black;
-    text-align: center;
+   text-align: center;
     
 }
 .principal .contenedor {
@@ -113,6 +111,8 @@ p {
     padding: 50px;
     min-height: 500px;
 }
+
+
 
 .proyectos .contenedor .col{
     border: #001524;
@@ -167,7 +167,6 @@ footer {
 }
 
 footer .contenedor{
-    display: flexbox;
     flex-direction: column;
     justify-items: center;
     padding: 10px;
