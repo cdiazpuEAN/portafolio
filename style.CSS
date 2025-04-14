@@ -1,0 +1,115 @@
+/* barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #001524;
+  
+
+}
+a.nav-link {
+    color: white;
+    
+}
+
+a.nav-link:hover {
+    color: #ff7d00;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos Generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.seccion-oscura{
+    color : white;
+    background-color: #15616d;
+    font-weight: 100;
+}
+.seccion-clara{
+    color: black;
+    background-color: #ffecd1;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+/* Seccion Principal */
+.hero {
+    background-attachment: white;
+    min-height: 450px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.imagen-perfil {
+    width: 200px;
+    height: 200px;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    color: grey;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+/* Seccion Yo */
+.yo .contenedor {
+    max-width: 600px;
+    text-align: center;
+    height: 200px;
+}    
+
+/* Seccion Proyectos */
+.proyectos {
+    padding: 40;
+}
+
+.proyectos .contenedor .row div{
+    border: #001524;
+    border: 1px solid;
+}
+
+/* Adaptable Responsivo */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+    
+}
+
