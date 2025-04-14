@@ -27,16 +27,6 @@ section {
     align-items: center;
     justify-content: center;
 }
-
-h1 {
-    font-size: 2.5rem;
-    color: black;
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-}
-
 .seccion-oscura{
     color : white;
     background-color: #15616d;
@@ -46,6 +36,15 @@ h1 {
     color: black;
     background-color: #ffecd1;
     font-weight: 100;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 h2 {
@@ -62,6 +61,10 @@ p {
     font-weight: 100;
 }
 
+.containet a {
+    text-align: center;
+    padding: 10px;
+}
 
 /* Seccion Principal */
 .hero {
@@ -96,12 +99,108 @@ p {
 
 /* Seccion Proyectos */
 .proyectos {
-    padding: 40;
+    padding: 40px;
 }
 
-.proyectos .contenedor .row div{
+.proyectos .contenedor .col{
     border: #001524;
     border: 1px solid;
+    transition: all 0.2s ease-in;
+}
+.proyectos .columna:hover {
+    background-color: #15616d;
+    color: white;
+}
+
+.proyectos-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.proyectos i {
+    font-size: 3rem;
+
+}
+
+.badge-contenedor {
+    margin: 10px 0;
+    
+}
+
+
+.badge {
+    margin: 5px;
+    
+}
+
+/* Contacto */
+
+.contacto .container {
+    min-height: 300px;    
+    background-color:#15616d;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.contacto .col {
+    align-items: center;
+    justify-items: center;
+}
+
+.contacto button {
+    padding: 1.25em 2em;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 100px;
+}
+
+.contacto button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Pie de Pagina */
+footer {
+    min-height: 500px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+.iconos-redes-sociales i {
+    color: white;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+}
+.iconos-redes-sociales a:hover i {
+    color:black;
 }
 
 /* Adaptable Responsivo */
