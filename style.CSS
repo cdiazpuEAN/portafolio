@@ -2,11 +2,10 @@
 
 .navbar {
   padding: 2rem;
-  background-color: #001524;
-  position: fixed;
+  background-color: #e63946;
   width: 100%;
-  height: 100px;
-  
+  min-height: 100px;
+  font-size: larger; 
 
 }
 a.nav-link {
@@ -15,7 +14,7 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-    color: #ff7d00;
+    color: #1d3557
 }
 
 .navbar-collapse {
@@ -32,18 +31,18 @@ section {
 }
 .seccion-oscura{
     color : white;
-    background-color: #15616d;
+    background-color:#1d3557;
     font-weight: 100;
 }
 .seccion-clara{
     color: black;
-    background-color: #ffecd1;
+    background-color: #f1faee;
     font-weight: 100;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: black;
+    color: #1d3557;
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -52,6 +51,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: #457b9d;
     font-family: "Alumni Sans Pinstripe", sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -69,40 +69,49 @@ p {
     padding: 10px;
 }
 
+
+
 /* Seccion Principal */
-.hero {
-    background-attachment: white;
-    min-height: 450px;
+.principal {
+    background-attachment: black;
     text-align: center;
-    padding: 2rem;
+    
+}
+.principal .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.principal .centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.imagen-perfil {
-    width: 200px;
-    height: 200px;
-}
-
-
-.hero h1 {
-    font-size: 3rem;
-    color: grey;
-}
-
-.hero h2 {
-    font-size: 1.5rem;
-    color: grey;
+.video-princial {
+    width: 100%;
+    max-height: fit-content;
+    filter:grayscale(100%);
+    opacity: 0.4;
 }
 
 /* Seccion Yo */
 .yo .contenedor {
     max-width: 600px;
     text-align: center;
-    height: 200px;
+    padding: 100px;
 }    
+
+.imagen-perfil {
+    width: 200px;
+    height: 200px;
+}
 
 /* Seccion Proyectos */
 .proyectos {
-    padding: 40px;
+    padding: 50px;
+    min-height: 500px;
 }
 
 .proyectos .contenedor .col{
@@ -111,7 +120,7 @@ p {
     transition: all 0.2s ease-in;
 }
 .proyectos .columna:hover {
-    background-color: #15616d;
+    background-color: #1d3557;
     color: white;
 }
 
@@ -131,20 +140,39 @@ p {
     
 }
 
-
 .badge {
     margin: 5px;
+    background-color: #e63946;
     
 }
 
 /* Contacto */
 
+.contacto .contenedor{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contacto button {
+    background-color: #e63946;
+    border: #001524;
+    border: 1px;
+}
 
 /* Pie de Pagina */
 footer {
-    min-height: 500px;
+    min-height: 500px;   
 }
 
+footer .contenedor{
+    display: flexbox;
+    flex-direction: column;
+    justify-items: center;
+    padding: 10px;
+    
+}
 .footer-logo {
     height: 80px;
     width: 80px;
@@ -154,6 +182,7 @@ footer {
     font-size: 1.5rem;
     padding: 20px;
     margin-bottom: 30px;
+    
 }
 .iconos-redes-sociales a {
     width: 50px;
@@ -163,13 +192,13 @@ footer {
     justify-content: center;
     padding: 2px;
     margin: 10px;
-    border: 2px solid white;
+    border: 2px solid #e63946;
     border-radius: 50%;
 
 }
 
 .iconos-redes-sociales i {
-    color: white;
+    color: #e63946;
 }
 
 .iconos-redes-sociales a:hover {
@@ -179,12 +208,33 @@ footer {
     color:black;
 }
 
+audio {
+    padding: 10px;
+}
+
 /* Adaptable Responsivo */
 
 @media screen and (max-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
+    .navbar-brand {
+        display: none;
+
+    }
+    
+    .principal .contenedor {
+        position:static;
+        margin: 10px;
+    }   
+    
+    .principal .centrado{
+        position: static;
+        transform: translate(0%);
+    }
+    .video-princial {
+        display: none;
+    
+    }
+    
+
     
 }
 
