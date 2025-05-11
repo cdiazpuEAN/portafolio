@@ -1,221 +1,260 @@
 <!DOCTYPE html>
-<html lang = "es" >
-    <head>
-         <!-- Metadatos -->
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <meta name="description" content="Pagina web de portafolio de Camilo Andres Diaz Pulgar">
-         <meta name="author" content="Camilo Andres Diaz Pulgar">
-         <meta name="keywords" content="portafolio, camilo andres diaz pulgar, ingeniero de sistemas, ingeniero de software, ingeniero datos, ingeniero">
-         
-         <!-- Title -->
-         <title>Portafolio | Camilo Andres Diaz Pulgar</title>
-         <link rel="icon" href="img/logo-128.png" type="image/x-icon">
+<html lang="es">
 
-        <!-- Bootstrap  -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-       
-        <!-- CSS -->
-        <link href = "style.CSS" rel="stylesheet">
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pagina web de portafolio de Camilo Andres Diaz Pulgar">
+  <meta name="author" content="Camilo Andres Diaz Pulgar">
+  <meta name="keywords"
+    content="portafolio, camilo andres diaz pulgar, ingeniero de sistemas, ingeniero de software, ingeniero datos, ingeniero">
 
-        
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
-           
-    </head>
-    <body>
-        <!-- Barra de navegacion -->
-        <nav class="navbar navbar-expand-md " >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="img/logo-128.png" width="60" alt="Logo de la Pagina">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-expanded="false" aria-label="Toggle navigation" >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar-toggler">
-                <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#yo">Yo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#proyectos">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto" >Contacto</a>
-                  </li>
-                </ul>                
-              </div>
-            </div>
-        </nav>
+  <!-- Title -->
+  <title>Portafolio | Camilo Andres Diaz Pulgar</title>
+  <link rel="icon" href="img/logo-128.png" type="image/x-icon">
 
-        <!-- Seccion Principal -->
-        <section class = "principal">
-            <figure class = "contenedor">
-              <!-- Vídeo de Kelly : https://www.pexels.com/es-es/video/persona-que-conduce-una-motocicleta-2519660/ -->
-                <video class="video-princial" src="multimedia/viaje.mp4" preload="auto" loop autoplay></video>
-                <article class="centrado">
-                  <h1>¡Hola! Gracias por visitar mi portafolio.</h1>
-                  <h2>Aquí encontrarás un poco sobre mí, mis proyectos y lo que me apasiona del mundo de la tecnología.</h2>
-                </article>
-                
-            </figure>
-           
+  <!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-        </section>
-        <!-- Seccion Yo -->
-         <section id="yo" class = "yo seccion-oscura">
-            <div class="contenedor">
-                <img class="imagen-perfil rounded-circle" src="img/fotoperfil.png" alt="Foto de perfil" >
-                <h2 class="seccion-titulo">Conóceme</h2>
-                <p class="seccion-texto">
-                  Soy Camilo Díaz, estudiante de Ingeniería de Sistemas con formación adicional en producción y logística. Me apasiona entender cómo funcionan los procesos, optimizarlos y, sobre todo, trabajar con datos.
-                  Actualmente, me especializo en el análisis y manipulación de datos usando Python, combinando mis conocimientos técnicos con una visión estructurada gracias a mi experiencia en logística.
-                </p>
-            </div>
-         </section>
-        <!-- Seccion Proyectos -->
-         <section id="proyectos" class = "proyectos seccion-clara">
-            <div class = "contenedor text-center">
-                <div class= "row">
-                    <!-- Desarrollo Web -->
-                     <div class = "columna col-12 col-md-4">
-                        <i class="bi bi-code-square"></i>
-                        <p class = "proyectos-titulo">Desarrollo web</p>
-                        <article>Me he involucrado en el desarrollo web como una forma de dar vida a ideas y proyectos personales. Utilizo herramientas como HTML, CSS, JavaScript y frameworks como Bootstrap para crear sitios funcionales y responsivos. Estoy en constante aprendizaje, explorando tecnologías como Angular y bases de datos para ampliar mis capacidades y construir soluciones cada vez más completas. Estos son algunos de los proyectos en los que he participado
-                        </article>
-                        <div class="badge-contenedor">
-                          <span class="badge text-bg-Secondary">BlasJaramillo</span>
-                          <span class="badge text-bg-Secondary">Natakumi</span>
-                          <span class="badge text-bg-Secondary">Pergrino</span>
-                        </div>
-                      </div>
-                    <!-- Proyectos Data -->
-                    <div class = "columna col-12 col-md-4">
-                        <i class="bi bi-file-earmark-bar-graph"></i>
-                        <p class="proyectos-titulo">Proyectos de Data</p>
-                        <article>Mi interés por los datos me ha llevado a trabajar en proyectos donde uso Python y librerías como Pandas, NumPy y Matplotlib para limpiar, analizar y visualizar información. Me gusta transformar datos crudos en insights valiosos que ayuden a la toma de decisiones. También he experimentado con automatización de tareas y pequeños modelos de ETL como parte de mi proceso de aprendizaje. Estas son algunas de las herramientas que he manejado
-                        </article>
-                        <div class="badge-contenedor">
-                          <span class="badge text-bg-Secondary">Estadistica</span>
-                          <span class="badge text-bg-Secondary">Pyhton</span>
-                          <span class="badge text-bg-Secondary">PowerBI</span>
-                          <span class="badge text-bg-Secondary">Looker Studio</span>
-                        </div>
-                      </div>
-                    <!-- Estudios -->
-                    <div class = " columna col-12 col-md-4">
-                      <i class="bi bi-marker-tip"></i>
-                      <p class = "proyectos-titulo">Estudios</p>
-                      <article>Soy estudiante de Ingeniería de Sistemas, lo que me ha dado una base sólida en programación, estructuras de datos, redes y bases de datos. Además, tengo estudios en producción y logística, lo cual me permite tener una visión analítica y enfocada en la optimización de procesos. Esta combinación de conocimientos técnicos y operativos me da una perspectiva integral para abordar distintos tipos de proyectos.</article>
-                      <div class="badge-contenedor">
-                        <span class="badge text-bg-Secondary">Ing. Sistemas</span>
-                        <span class="badge text-bg-Secondary">Produccion</span>
-                        <span class="badge text-bg-Secondary">Logistica</span>                        
-                      </div>
-                    </div>
+  <!-- CSS -->
+  <link href="style.CSS" rel="stylesheet">
 
 
-                </div>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
 
-            </div>
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo-128.png" width="60" alt="Logo de la Pagina">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#yo">Yo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Principal -->
+  <section class="principal">
+    <figure class="contenedor">
+      <!-- Vídeo de Kelly : https://www.pexels.com/es-es/video/persona-que-conduce-una-motocicleta-2519660/ -->
+      <video id="video" class="video-princial" src="multimedia/viaje.mp4" preload="auto" loop autoplay></video>
+      <article class="centrado">
+        <h1>¡Hola! Gracias por visitar mi portafolio.</h1>
+        <h2>Aquí encontrarás un poco sobre mí, mis proyectos y lo que me apasiona del mundo de la tecnología.</h2>
+      </article>
+
+    </figure>
 
 
-         </section>
-         <!-- Contacto -->
-         <section id="contacto" class="contacto">
-          <div class="contenedor">
-            <h1>No dudes en escribirme &#128526; </h1>
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre">
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="inputEmail4" required>
-              </div>            
-              <div class="col-8">
-                <label for="inputAddress" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Diagonal 12 Nº 12-12 Casa 34">
-              </div>
-              <div class="col-4">
-                <label for="phone" class="form-label">Celular</label>
-                <input type="tel" class="patron form-control" id="phone" autocomplete="tel" placeholder="3-- --- ----" pattern="3|||||||||">
-                
-              </div>
-              <div class="col-6">
-                <label for="date" class="form-label">Fecha</label>
-                <input type="date" class="form-control" id="date">
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <select id="inputCity" class="form-select">
-                  <option selected>Escoge...</option>
-                  <option>Barranquilla</option>
-                  <option>Bogota</option>
-                  <option>Bucaramanga</option>
-                  <option>Cali</option>
-                  <option>Medellin</option>
-                </select>
-              </div>
-              <div class="col-6">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                  <label class="form-check-label" for="gridCheck">
-                    De acuerdo con los terminos y condiciones
-                  </label>
-                
-                </div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
-            </form>
-          </div>          
-         </section>
-         
-         <!-- Pie de Pagina -->
-         <footer class = "seccion-oscura d-flex flex-column align-items-center justify-content-center">
-          <div class="contenedor">
-            <img class="footer-logo" src="img/logo-128.png" alt="logo del portafolio">
-            <p class = "footer-text text-center">Gracias por tomarte el tiempo de conocer mi trabajo. <br> Si te interesa colaborar o simplemente conversar sobre tecnología, estaré feliz de conectar contigo</p>
-            <div class = "iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-             
-              <a href="https://www.linkedin.com/in/diazpulgarcamiloandres?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a href="https://wa.me/+573105719796" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-              <a href="https://x.com/CaDiazPulgar?t=fZKb5h2gVkIuled1x3EC9g&s=08" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-twitter-x"></i>
-              </a>
-              <a href="https://github.com/cdiazpuEAN" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="mailto:cdiazpu77903@universidadean.edu.co" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-envelope"></i>
-              </a>
-            </div>  
+  </section>
+  <!-- Seccion Yo -->
+  <section id="yo" class="yo seccion-oscura">
+    <div class="contenedor">
+      <img class="imagen-perfil rounded-circle" src="img/fotoperfil.png" alt="Foto de perfil">
+      <h2 class="seccion-titulo">Conóceme</h2>
+      <p class="seccion-texto">
+        Soy Camilo Díaz, estudiante de Ingeniería de Sistemas con formación adicional en producción y logística. Me
+        apasiona entender cómo funcionan los procesos, optimizarlos y, sobre todo, trabajar con datos.
+        Actualmente, me especializo en el análisis y manipulación de datos usando Python, combinando mis conocimientos
+        técnicos con una visión estructurada gracias a mi experiencia en logística.
+      </p>
+    </div>
+  </section>
+  <!-- Seccion Proyectos -->
+  <section id="proyectos" class="proyectos seccion-clara">
+    <div class="contenedor text-center">
+      <div class="row">
+        <!-- Desarrollo Web -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-code-square"></i>
+          <p class="proyectos-titulo">Desarrollo web</p>
+          <article>Me he involucrado en el desarrollo web como una forma de dar vida a ideas y proyectos personales.
+            Utilizo herramientas como HTML, CSS, JavaScript y frameworks como Bootstrap para crear sitios funcionales y
+            responsivos. Estoy en constante aprendizaje, explorando tecnologías como Angular y bases de datos para
+            ampliar mis capacidades y construir soluciones cada vez más completas. Estos son algunos de los proyectos en
+            los que he participado
+          </article>
+          <div class="badge-contenedor">
+            <span class="badge text-bg-Secondary">BlasJaramillo</span>
+            <span class="badge text-bg-Secondary">Natakumi</span>
+            <span class="badge text-bg-Secondary">Pergrino</span>
           </div>
-          <div class="contenedor">
-            <div class="derechos-autor"> Creado por Camilo Andres Diaz Pulgar (2025) &#169;
-            </div>
-            <!-- Audio de Music: Music I Use: Bensound.com/free-music-for-videos License code: 6OKC9CQFA0U9XRU8-->
-            <audio src="multimedia/happyrock.mp3" controls loop preload="auto" autoplay></audio>
+        </div>
+        <!-- Proyectos Data -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-file-earmark-bar-graph"></i>
+          <p class="proyectos-titulo">Proyectos de Data</p>
+          <article>Mi interés por los datos me ha llevado a trabajar en proyectos donde uso Python y librerías como
+            Pandas, NumPy y Matplotlib para limpiar, analizar y visualizar información. Me gusta transformar datos
+            crudos en insights valiosos que ayuden a la toma de decisiones. También he experimentado con automatización
+            de tareas y pequeños modelos de ETL como parte de mi proceso de aprendizaje. Estas son algunas de las
+            herramientas que he manejado
+          </article>
+          <div class="badge-contenedor">
+            <span class="badge text-bg-Secondary">Estadistica</span>
+            <span class="badge text-bg-Secondary">Pyhton</span>
+            <span class="badge text-bg-Secondary">PowerBI</span>
+            <span class="badge text-bg-Secondary">Looker Studio</span>
           </div>
-          
-         </footer>
+        </div>
+        <!-- Estudios -->
+        <div class=" columna col-12 col-md-4">
+          <i class="bi bi-marker-tip"></i>
+          <p class="proyectos-titulo">Estudios</p>
+          <article>Soy estudiante de Ingeniería de Sistemas, lo que me ha dado una base sólida en programación,
+            estructuras de datos, redes y bases de datos. Además, tengo estudios en producción y logística, lo cual me
+            permite tener una visión analítica y enfocada en la optimización de procesos. Esta combinación de
+            conocimientos técnicos y operativos me da una perspectiva integral para abordar distintos tipos de
+            proyectos.</article>
+          <div class="badge-contenedor">
+            <span class="badge text-bg-Secondary">Ing. Sistemas</span>
+            <span class="badge text-bg-Secondary">Produccion</span>
+            <span class="badge text-bg-Secondary">Logistica</span>
+          </div>
+        </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    </body>
-    
+      </div>
 
+    </div>
+
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="contenedor">
+      <h1>No dudes en escribirme &#128526; </h1>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-8">
+          <label for="inputAddress" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Diagonal 12 Nº 12-12 Casa 34">
+        </div>
+        <div class="col-4">
+          <label for="phone" class="form-label">Celular</label>
+          <input type="tel" class="patron form-control" id="phone" autocomplete="tel" placeholder="3-- --- ----"
+            pattern="3|||||||||">
+
+        </div>
+        <div class="col-6">
+          <label for="date" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <select id="inputCity" class="form-select">
+            <option selected>Escoge...</option>
+            <option>Barranquilla</option>
+            <option>Bogota</option>
+            <option>Bucaramanga</option>
+            <option>Cali</option>
+            <option>Medellin</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+              De acuerdo con los terminos y condiciones
+            </label>
+
+          </div>
+        </div>
+        <div class="col-12">
+          <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+
+  </section>
+  <!-- Cierre de Pagina-->
+  <section id="timeout" class="timeout seccion-clara">
+    <div class="contenedor text-center">
+      <h1> Tiempo para el cierre de la pagina</h1>
+      <h2 id="timer">05:00</h2>
+      <div>
+        <button id="botonTimer">Pausar</button>
         
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Pie de Pagina -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <div class="contenedor">
+      <img class="footer-logo" src="img/logo-128.png" alt="logo del portafolio">
+      <p class="footer-text text-center">Gracias por tomarte el tiempo de conocer mi trabajo. <br> Si te interesa
+        colaborar o simplemente conversar sobre tecnología, estaré feliz de conectar contigo</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+
+        <a href="https://www.linkedin.com/in/diazpulgarcamiloandres?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://wa.me/+573105719796" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://x.com/CaDiazPulgar?t=fZKb5h2gVkIuled1x3EC9g&s=08" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://github.com/cdiazpuEAN" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:cdiazpu77903@universidadean.edu.co" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="derechos-autor"> Creado por Camilo Andres Diaz Pulgar (2025) &#169;
+      </div>
+      <!-- Audio de Music: Music I Use: Bensound.com/free-music-for-videos License code: 6OKC9CQFA0U9XRU8-->
+      <audio id="cancion" src="multimedia/happyrock.mp3" controls loop preload="auto" autoplay></audio>
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+
+
 </html>
