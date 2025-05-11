@@ -28,7 +28,7 @@ for (const badge of badges) {
 var timer = document.getElementById('timer');
 var botontimer = document.getElementById('botonTimer');
 
-let [minutos, segundos] = [1, 0];
+let [minutos, segundos] = [5, 0];
 let intervaloTiempo;
 let estadoTimer = 'activo';
 
