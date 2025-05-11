@@ -1,36 +1,36 @@
 // configuracion del mensaje de alerta al enviar el formulario
 
-var enviar = document.getElementById('enviar');
+var enviar = document.getElementById("enviar");
 
 function enviado() {
     window.alert("La informacion ha sido enviada correctamente.");
 }
 
-enviar.addEventListener('click', enviado, false);
+enviar.addEventListener("click", enviado, false);
 
 
 // configuracion para esconder los badges
 
-var badges = document.getElementsByClassName('badge');
+var badges = document.getElementsByClassName("badge");
 
 function esconder(elemento) {
-    elemento.target.style.visibility = 'hidden';
+    elemento.target.style.visibility = "hidden";
 }
 
 for (const badge of badges) {
-    badge.addEventListener('click', esconder, false);
+    badge.addEventListener("click", esconder, false);
 }
 
 
 
 // configuracion del temporizador
 
-var timer = document.getElementById('timer');
-var botontimer = document.getElementById('botonTimer');
+var timer = document.getElementById("timer");
+var botontimer = document.getElementById("botonTimer");
 
 let [minutos, segundos] = [5, 0];
 let intervaloTiempo;
-let estadoTimer = 'activo';
+let estadoTimer = "activo";
 
 function correrTimer() {
     if (segundos === 0) {
@@ -73,8 +73,8 @@ intervaloTiempo = setInterval(correrTimer, 1000);
 botontimer.addEventListener('click', cambioEstadoTimer, false);
 
 // configuracion para relacionar la musica con el audio
-var cancion = document.getElementById('cancion');
-var video = document.getElementById('video');
+var cancion = document.getElementById("cancion");
+var video = document.getElementById("video");
 
 function cambiarEstadoVideo(elemento){
     if (video.paused) {
@@ -86,5 +86,5 @@ function cambiarEstadoVideo(elemento){
     }
 }
 
-video.addEventListener('click', cambiarEstadoVideo, false);
+video.addEventListener("click", cambiarEstadoVideo, false);
 
