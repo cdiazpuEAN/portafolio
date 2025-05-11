@@ -1,32 +1,23 @@
-// configuracion del mensaje de alerta al enviar el formulario
 
 var enviar = document.getElementById("enviar");
+var badges = document.getElementsByClassName("badge");
+var timer = document.getElementById("timer");
+var botontimer = document.getElementById("botonTimer");
+var cancion = document.getElementById("cancion");
+var video = document.getElementById("video");
+
 
 function enviado() {
     window.alert("La informacion ha sido enviada correctamente.");
 }
 
-enviar.addEventListener("click", enviado, false);
-
-
-// configuracion para esconder los badges
-
-var badges = document.getElementsByClassName("badge");
-
 function esconder(elemento) {
     elemento.target.style.visibility = "hidden";
 }
 
-for (const badge of badges) {
+for (let badge of badges) {
     badge.addEventListener("click", esconder, false);
 }
-
-
-
-// configuracion del temporizador
-
-var timer = document.getElementById("timer");
-var botontimer = document.getElementById("botonTimer");
 
 let [minutos, segundos] = [5, 0];
 let intervaloTiempo;
@@ -58,7 +49,7 @@ function cambioEstadoTimer(elemento) {
     console.log(estadoTimer);
     console.log(elemento);
     if (estadoTimer === "activo") {
-        estadoTimer = 'desactivado';
+        estadoTimer = "desactivado";
         elemento.target.innerText = "Activar";
         clearInterval(intervaloTiempo);
     } else {
@@ -67,14 +58,6 @@ function cambioEstadoTimer(elemento) {
         intervaloTiempo = setInterval(correrTimer, 1000);
     }
 }
-
-intervaloTiempo = setInterval(correrTimer, 1000);
-
-botontimer.addEventListener('click', cambioEstadoTimer, false);
-
-// configuracion para relacionar la musica con el audio
-var cancion = document.getElementById("cancion");
-var video = document.getElementById("video");
 
 function cambiarEstadoVideo(elemento){
     if (video.paused) {
@@ -85,6 +68,12 @@ function cambiarEstadoVideo(elemento){
        cancion.pause();
     }
 }
+
+enviar.addEventListener("click", enviado, false);
+
+intervaloTiempo = setInterval(correrTimer, 1000);
+
+botontimer.addEventListener("click", cambioEstadoTimer, false);
 
 video.addEventListener("click", cambiarEstadoVideo, false);
 
